@@ -15,6 +15,11 @@ public class Arrivals {
     @ManyToOne
     private Airplanes airplanes;
 
+    @ManyToOne
+    private Arrivals arrivals;
+
+    @ManyToOne
+    private Gates gates;
 
 
 

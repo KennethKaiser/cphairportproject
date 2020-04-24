@@ -5,12 +5,14 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Waiting_spots {
+public class Handling_companies {
 
     @Id
-    private int waiting_spot_id;
+    private int handling_comp_id;
+
+    private String handling_comp_name;
 
     @OneToOne
-    private Airplanes airplanes;
+    private Airlines airlines;
 
 }

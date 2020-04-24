@@ -5,25 +5,19 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Airlines {
+public class Departures {
 
     @Id
-    private String airline_code;
-    private String airline_name;
-    private int airline_tel;
+    private String expected_date_time;
+    private String actual_date_time;
 
     @ManyToOne
-    private Terminal terminal;
-
-    @ManyToOne
-    private Handling_companies handling_companies;
+    private Departures departures;
 
     @ManyToOne
     private Airport airport;
 
-
-
-
-
+    @ManyToOne
+    private Gates gates;
 
 }
