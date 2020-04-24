@@ -5,19 +5,12 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Gates {
+public class Terminal {
 
     @Id
-    private int gate_number;
-
-    private int gate_size;
-    private boolean gate_status;
+    private int terminal_number;
 
     @ManyToOne
-    private Terminal terminal;
-
-
-
-
+    private Airport airport;
 
 }

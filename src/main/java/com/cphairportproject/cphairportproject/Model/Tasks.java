@@ -5,18 +5,17 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Gates {
+public class Tasks {
 
     @Id
-    private int gate_number;
+    private String task_name;
 
-    private int gate_size;
-    private boolean gate_status;
+    private int duration_small;
+    private int duration_standard;
+    private int duration_large;
 
     @ManyToOne
-    private Terminal terminal;
-
-
+    private Handling_crews handling_crews;
 
 
 
